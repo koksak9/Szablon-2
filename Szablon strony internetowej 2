@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2208e2acd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<style>
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+
+
+body
+{
+    font-family: Inter, sans-serif;
+    background-color: #303030;
+    color: azure;
+}
+
+header
+{
+background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(gora.jpg)no-repeat center / cover ;
+position: relative;
+text-align: center;
+height: 100vh;
+}
+
+ul
+{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+}
+
+.button
+{
+    background-color: none;
+    border-radius: 50px;
+    border: 2px solid azure;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.o
+
+{
+    color: gold;
+    text-decoration: none;
+}
+
+.b
+{
+    font-size: 50px;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.logo
+{
+    margin-right: auto;
+    margin-left: 65px;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.size
+{
+    font-size: 80px;
+    letter-spacing: .8px;
+}
+
+hr
+{
+    background-color: azure;
+    color: azure;
+    height: 5px;
+    width: 95vw;
+    margin: auto;
+}
+
+.klm
+{
+    display: flex;
+    justify-content: center;
+}
+
+.klm>ul {
+    transform: translateX(5%);
+}
+
+footer
+{
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+footer>.logo 
+{
+    margin: auto 10px;
+    margin-right: auto;
+}
+
+.gbf
+{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    width: 300px;
+    transform: translateX(-20%);
+    font-size: 32px;
+}
+
+.bg
+{
+    display: block ;
+    padding: 50px 0;
+    background: linear-gradient(#303030 0, rgba(0,0,0,0) 20% , #303030 98%), url(sunrise.jpg) no-repeat center / cover ;
+    height: 100vh;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-title
+{
+    position: relative;
+    top: 50%;
+}
+
+li
+{
+    margin: 50px 65px 50px 0;
+}
+
+.margin-128
+{
+    margin: 128px;
+}
+
+.first-section, .second-section
+{
+    color: azure;
+    text-align: center;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col
+{
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.col3-hr
+{
+    color: gold;
+    background-color: gold;
+    height: 3px;
+    width: 40%;
+    position: relative;
+    top: 50px;
+    animation: hr-col3 3s ease forwards;
+}
+
+.col2
+{
+    width: 600px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.col3
+{
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.col4
+{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+}
+
+.col4-h2
+{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.col4-h1
+{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.title-box
+{
+    margin: 200px;
+    font-size: x-large;
+    animation: box 3s ease forwards;
+}
+
+.col1-h2
+{
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+
+.col1-h1
+{
+    font-size: 32px;
+}
+
+.col1-text
+{
+    margin-bottom: 128px;
+}
+
+.col1-1
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(Cafe.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col1-2
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(Road.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col1-3
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(Flower.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col1-4
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(people.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col2-h2
+{
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+
+.col2-h1
+{
+    font-size: 32px;
+}
+
+.col2-text
+{
+    margin-bottom: 128px;
+    text-align: center;
+}
+
+.col2-1
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(photo1.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col2-2
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(photo2.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col3-h2
+{
+    font-size: 16px;
+    letter-spacing: .8px;
+}
+
+.col3-h1
+{
+    font-size: 32px;
+}
+
+.col3-text
+{
+    margin-bottom: 128px;
+    text-align: center;
+}
+
+.col3-1
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(niemcy.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col3-2
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(desert.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col3-3
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(woman.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col3-4
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), url(architektura.jpg)no-repeat center / cover ;
+    border-radius: 20px;
+}
+
+.col4-1
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), no-repeat center / cover ;
+}
+
+.col4-2
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), no-repeat center / cover ;
+}
+
+.col4-3
+{
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, #303030 100%), no-repeat center / cover ;
+}
+
+@keyframes hr-col3
+{
+    0%
+    {
+        transform: translateY(200px);
+        opacity: .3;
+    }
+
+    100%
+    {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes box
+{
+    0%
+    {
+        transform: translateY(-200px);
+        opacity: .3;
+    }
+
+    100%
+    {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+</style>
+    <header>
+        <nav>
+            <ul>
+                <span class="logo"><i class="fa-solid fa-camera-retro"></i> Photo Studio</span>
+                <li><a class="nav-link" href="a">Fotografie</a></li>
+                <li><a class="nav-link" href="a">Klasy</a></li>
+                <li><a class="nav-link" href="a">Warsztaty</a></li>
+                <li><a class="nav-link button" href="a">Login</a></li>
+            </ul>
+            <hr>
+        </nav>
+        <div class="title-box">
+            <h2>Mateusz Gałązka</h2>
+            <h1>Fotografie Krajobrazów</h1>
+        </div>
+    </header>
+    <div class="first-section margin-128">
+        <div class="col1-text">
+            <h2>Top najlepszych zdjęć</h2>
+            <h1>Zdobądź nowe umiejętności</h1>
+        </div>
+        <div class="container">
+            <div class="col col1-1">
+                <h1 class="col1-h1">Architektura</h1>
+                <h2 class="col1-h2">Lukas Hartman</h2>
+            </div>
+            <div class="col col1-2">
+                <h1 class="col1-h1">Krajobraz</h1>
+                <h2 class="col1-h2">Aleksander Kowalski</h2>
+            </div>
+            <div class="col col1-3">
+                <h1 class="col1-h1">Natura</h1>
+                <h2 class="col1-h2">Jonathan Georke</h2>
+            </div>
+
+            <div class="col col1-4">
+                <h1 class="col1-h1">Ludzie</h1>
+                <h2 class="col1-h2">Felicja Rajke</h2>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="col2-text margin-128">
+        <h2>Najlepsi Fotografowie</h2>
+        <h1>Nasi Redaktorzy</h1>
+    </div>
+    <div class="container margin-128">
+        <div class="col2 col2-1">
+            <h1 class="col2-h1">Felicja Rajke</h1><br>
+            <h2 class="col2-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nisi excepturi ducimus, natus id autem aliquam pariatur recusandae illo eum veritatis assumenda, dolore odit dicta eligendi mollitia velit tempora a.</h2>
+        </div>
+        <div class="col2 col2-2">
+            <h1 class="col2-h1">Jonathan Georke</h1><br>
+            <h2 class="col2-h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti repellendus mollitia vitae aspernatur. Magni dignissimos expedita error. Quaerat molestiae tempore quisquam, totam atque minus voluptatibus quidem fuga dolores beatae laboriosam?</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="col2-text margin-128">
+        <h2>CO MÓWIĄ NASI STUDENCI</h2>
+        <h1>Zdobądź Więcej Dzięki Praktyce</h1>
+    </div>
+    <div class="container margin-128">
+        <div class="col3 col3-1">
+            <h2 class="col3-h2">4 DNI</h2> <br>
+            <h1 class="col3-h1">Piękna Toskania Wycieczka W Maju</h1> <br>
+            <h2 class="col3-h2">DANIEL KORDAN</h2>
+        </div>
+        <div class="col3 col3-2">
+            <h2 class="col3-h2">4 DNI</h2> <br>
+            <h1 class="col3-h1">Pustynia Nambi Wycieczka W Lutym</h1> <br>
+            <h2 class="col3-h2">THOMAS HEATON</h2>
+        </div>
+        <div class="col3 col3-3">
+            <h2 class="col3-h2">2 DNI</h2> <br>
+            <h1 class="col3-h1">Fotografia Mody: Kompletny Przewodnik</h1> <br>
+            <h2 class="col3-h2">ELIA LOCARDI</h2>
+        </div>
+
+        <div class="col3 col3-4">
+            <h2 class="col3-h2">10 DNI</h2> <br>
+            <h1 class="col3-h1">Czarne I Białe Architektura W Styczniu</h1> <br>
+            <h2 class="col3-h2">DANIEL KORDAN</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="col2-text margin-128">
+        <h2>CO MÓWIĄ NASI STUDENCI</h2> <br>
+        <p class="size">Zdobądź Więcej Dzięki Praktyce</p>
+    </div>
+    <div class="container margin-128">
+        <div class="col4 col4-1">
+            <hr class="col3-hr">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quod qui nostrum itaque natus obcaecati eveniet voluptatibus ad sunt quasi. Ad enim natus consectetur ab doloremque hic earum eum dicta.</p><br>
+            <h1 class="col4-h1">Anna Chong</h1> 
+            <h2 class="col4-h2">Poland</h2>
+        </div>
+        <div class="col4 col4-2">
+            <hr class="col3-hr">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quod qui nostrum itaque natus obcaecati eveniet voluptatibus ad sunt quasi. Ad enim natus consectetur ab doloremque hic earum eum dicta.</p> <br>
+            <h1 class="col4-h1">Angela Levine</h1>
+            <h2 class="col4-h2">Germany</h2>
+        </div>
+        <div class="col4 col4-3">
+            <hr class="col3-hr">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ut expedita, alias, ex blanditiis consectetur autem neque reprehenderit quidem qui accusamus illum, magni eligendi! Omnis quibusdam dicta dolor in qui.</p> <br>
+            <h1 class="col4-h1">Jane Locardi</h1> 
+            <h2 class="col4-h2">Slovakia</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="bg">
+        <div class="footer-title">
+            <h2>UCZ SIĘ OD NAJLEPSZYCH</h2> <br>
+            <h1 class="b">Weź Udział i Zainspiruj Się</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <br>
+            <a href="a" class="o">PRZEGLĄDAJ ZDJĘCIA →</a> 
+            </div>
+
+    </div>
+    <hr>
+
+    <div class="klm">
+        <ul>
+            <li><a href="a">Fotografowie</a></li>
+            <li><a href="a">Lekcje</a></li>
+            <li><a href="a">Warsztaty</a></li>
+            <li><a href="a">Kontakt</a></li>
+        </ul>
+        
+    </div>
+    <hr>
+    <footer>
+
+        <span class="logo"><i class="fa-solid fa-camera-retro"></i> Photo Studio</span>
+        <ul class="gbf">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+    </footer>
+</body>
+</html>         
